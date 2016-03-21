@@ -33,5 +33,5 @@ import libFrame
 
 root = Tk()
 root.title("MicroSwitch Tester")
-mstester = colorFrame.MicroSwitchTester(root)
+mstester = libFrame.MicroSwitchTester(root)
 root.mainloop()

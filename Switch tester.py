@@ -28,7 +28,7 @@ def check_button():
 
 root = Tk()
 root.title("MicroSwitch Tester")
-mstester = colorFrame.MicroSwitchTester(root)
+mstester = libFrame.MicroSwitchTester(root)
 
 # button = Button(root, text="Quit.", fg="red", command=quit)
 # button.pack(side=RIGHT, padx=10, pady=10, ipadx=10, ipady=10)
