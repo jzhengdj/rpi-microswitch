@@ -12,6 +12,9 @@ Auto Start the script
 ```
 sudo nano /etc/rc.local
 
+chmod +x script.sh
+
 /home/pi/Public/mswitch-tester/script.sh &
+
 #python /home/pi/myscript.py &
 ```
