@@ -44,5 +44,12 @@ mstester = libFrame.MicroSwitchTester(root)
 # root.title("MicroSwitch Tester")
 # root.geometry('500x300+200+200')
 
+
+# Window location change to bottom of the screen.
+ws = root.winfo_screenwidth() # width of the screen
+hs = root.winfo_screenheight() # height of the screen
+root.geometry('%dx%d+%d+%d' % mstester.geometryPoint(ws, hs))
+
+
 root.after(10,check_button)
 root.mainloop()
