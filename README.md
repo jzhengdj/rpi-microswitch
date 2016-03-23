@@ -6,10 +6,11 @@ Show Green when MicroSwitch is in Close position.
 Show Red when MicroSwitch is open.
 
 
-
+```
 'rc.local' is to autostart 'scripts' at boot screen.
 For 'GUI applications', need to edit 'autostart' file.
 Rpi keyboard layout need to change to display '@'
+```
 
 Step1: copy the 'mswitch-tester' folder to '/home/pi/scripts'
 
