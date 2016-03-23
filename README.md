@@ -19,7 +19,10 @@ Step2: change keyboard layout
 ```
 sudo nano /etc/default/keyboard
 ```
-replace `XKBLAYOUT="gb"` with `XKBLAYOUT="us"`, then reboot.
+look for `XKBLAYOUT="gb"`,
+
+replace "gb" with "us", then reboot.
+
 
 Step3: edit the autostart list
 ```
