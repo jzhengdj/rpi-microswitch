@@ -6,15 +6,25 @@ Show Green when MicroSwitch is in Close position.
 Show Red when MicroSwitch is open.
 
 
-Auto Start the script
 
+#'rc.local' is to autostart 'scripts' at boot screen.
+#For 'GUI applications', need to edit 'autostart' file.
+#Rpi keyboard layout need to change to display '@'
+
+Step1: copy the 'mswitch-tester' folder to '/home/pi/scripts'
+Step2: change keyboard layout
 
 ```
-sudo nano /etc/rc.local
-
-chmod +x script.sh
-
-/home/pi/Public/mswitch-tester/script.sh &
-
-#python /home/pi/myscript.py &
+sudo nano /etc/default/keyboard
 ```
+replace `XKBLAYOUT="gb"` with `XKBLAYOUT="us"`
+
+Step3: edit the autostart list
+```
+sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart
+```
+add
+```
+@/usr/bin/python3 /home/pi/scripts/mswitch-tester/SwitchTester.py
+```
+before @screensaver
