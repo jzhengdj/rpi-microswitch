@@ -7,9 +7,9 @@ Show Red when MicroSwitch is open.
 
 
 ```
-'rc.local' is to autostart 'scripts' at boot screen.
+'rc.local' is to autostart 'scripts' at boot screen.(Not applicable in this case)
 For 'GUI applications', need to edit 'autostart' file.
-Rpi keyboard layout need to change to display '@'
+Rpi keyboard layout need to change to display '@' symbol
 ```
 
 Step1: copy the 'mswitch-tester' folder to '/home/pi/scripts'
@@ -19,7 +19,7 @@ Step2: change keyboard layout
 ```
 sudo nano /etc/default/keyboard
 ```
-replace `XKBLAYOUT="gb"` with `XKBLAYOUT="us"`
+replace `XKBLAYOUT="gb"` with `XKBLAYOUT="us"`, then reboot.
 
 Step3: edit the autostart list
 ```
