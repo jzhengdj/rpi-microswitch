@@ -12,9 +12,14 @@ For 'GUI applications', need to edit 'autostart' file.
 Rpi keyboard layout need to change to display '@' symbol
 ```
 
-Step1: copy the 'mswitch-tester' folder to '/home/pi/scripts'
+Step0:
+```
+sudo apt-get install unzip
+```
 
-Step2: change keyboard layout
+Step1: create 'scripts' folder under '/home/pi/', copy the 'mswitch-tester' folder into '/home/pi/scripts'
+
+Step2: change keyboard layout, (to input @ symbol)
 
 ```
 sudo nano /etc/default/keyboard
