@@ -38,3 +38,5 @@ add
 @/usr/bin/python3 /home/pi/scripts/mswitch-tester/SwitchTester.py
 ```
 before @screensaver
+
+I am editing the README file. Adding some more details about the project description.
